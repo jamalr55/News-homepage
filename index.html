@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <nav class="navBar">
+      <img class="navBarImg" src="assets/images/logo.svg" alt="" />
+      <!-- <img class="navBarMeny" src="assets/images/icon-menu.svg" alt="" /> -->
+
+      <ul>
+        <li><a href="#" class="navBarItem">Home</a></li>
+        <li><a href="#" class="navBarItem">New</a></li>
+        <li><a href="#" class="navBarItem">Popular</a></li>
+        <li><a href="#" class="navBarItem">Trending</a></li>
+        <li><a href="#" class="navBarItem">Categories</a></li>
+      </ul>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><img
+            class="navBarMeny"
+            src="assets/images/icon-menu-close.svg"
+            alt=""
+        /></a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <span class="navBarMeny" style="cursor: pointer" onclick="openNav()"
+        ><img class="navBarMeny" src="assets/images/icon-menu.svg" alt=""
+      /></span>
+    </nav>
+
+    <main class="container">
+      <div class="item1">
+        <picture>
+          <source
+            media="(min-width: 950px)"
+            srcset="assets/images/image-web-3-desktop.jpg"
+          />
+          <img
+            src="assets/images/image-web-3-mobile.jpg"
+            alt=""
+            class="mainImg"
+          />
+        </picture>
+      </div>
+
+      <div class="item2">
+        <h1>The Bright Future of Web 3.0?</h1>
+      </div>
+
+      <div class="item3">
+        <p>
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <button>Read more</button>
+      </div>
+
+      <div class="item4">
+        <h2 style="color: hsl(35, 77%, 62%)">New</h2>
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p style="color: hsl(233, 8%, 79%)">
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+        <hr />
+        <h3>The Downsides of AI Artistry</h3>
+        <p style="color: hsl(233, 8%, 79%)">
+          What are the possible adverse effects of on-demand AI image
+          generation?
+        </p>
+        <hr />
+        <h3>Is VC Funding Drying Up?</h3>
+        <p style="color: hsl(233, 8%, 79%)">
+          Private funding by VC firms is down 50% YOY. We take a look at what
+          that means.
+        </p>
+      </div>
+    </main>
+    <div class="tips">
+      <img
+        src="assets/images/image-retro-pcs.jpg"
+        alt="image-retro-pcs"
+        class="tipsImg"
+      />
+      <section>
+        <h1 style="color: hsl(236, 13%, 42%)">01</h1>
+        <h3>Reviving Retro PCs</h3>
+        <p style="color: hsl(236, 13%, 42%)">
+          What happens when old PCs are given modern upgrades?
+        </p>
+      </section>
+
+      <img
+        src="assets/images/image-top-laptops.jpg"
+        alt="image-top-laptops"
+        class="tipsImg"
+      />
+      <section>
+        <h1 style="color: hsl(236, 13%, 42%)">02</h1>
+        <h3>Top 10 Laptops of 2022</h3>
+        <p style="color: hsl(236, 13%, 42%)">
+          Our best picks for various needs and budgets.
+        </p>
+      </section>
+
+      <img
+        src="assets/images/image-gaming-growth.jpg"
+        alt="image-gaming-growth"
+        class="tipsImg"
+      />
+      <section>
+        <h1 style="color: hsl(236, 13%, 42%)">03</h1>
+        <h3>The Growth of Gaming</h3>
+        <p style="color: hsl(236, 13%, 42%)">
+          How the pandemic has sparked fresh opportunities.
+        </p>
+      </section>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.ten18designs.com/" target="_blank"
+        >Jamal Richardson</a
+      >.
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById('mySidenav').style.width = '250px';
+      }
+
+      function closeNav() {
+        document.getElementById('mySidenav').style.width = '0';
+      }
+    </script>
+  </body>
+</html>

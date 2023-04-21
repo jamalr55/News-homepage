@@ -1,0 +1,190 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(36, 100%, 99%);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    margin-inline: 10em;
+  }
+
+  .sidenav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 40px 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    display: none;
+  }
+}
+
+.navBarMeny {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .navBarMeny {
+    display: block;
+    padding-top: 8px;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav {
+    padding-top: 50px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+a {
+  color: hsl(240, 100%, 5%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.container {
+  gap: 1em;
+  display: grid;
+  grid-template-areas:
+    'item1 item1 item4'
+    'item2 item3 item4';
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.mainImg {
+  max-width: 100%;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+button {
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  font-size: 14px;
+  padding: 12px 40px;
+  letter-spacing: 0.2em;
+  border: none;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.item4 {
+  grid-area: item4;
+  color: white;
+  background-color: hsl(240, 100%, 5%);
+  padding: 15px;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+h3:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+@media screen and (max-width: 800px) {
+  .tips {
+    display: grid;
+    grid-template-columns: 0.55fr 1fr;
+    gap: 1em;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.tipsImg {
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
